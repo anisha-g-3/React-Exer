@@ -1,0 +1,29 @@
+
+
+function App()
+{
+    return(
+        <div className="App">
+            <button onClick={eq}>CY1</button>
+        </div>
+    )
+}
+function eq(){
+    const name1="Kabil";
+    const name2="Kabil";
+    const object1="Kabil";
+    const object2="Kabil";
+    if(name1==name2){
+        console.log("True");
+    }
+    else{
+        console.log("False");
+    }
+    if(object1==object2){
+        console.log("True");
+    }
+    else{
+        console.log("False");
+    }
+}
+export default App;
