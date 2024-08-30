@@ -1,0 +1,54 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #17063a;
+    margin: 0;
+    padding: 0;
+}
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 45px;
+    border: 10px solid #ddd;
+    border-radius: 5px;
+    background-color: rgb(107, 167, 195);
+    color: rgb(9, 16, 68);
+    
+}
+
+.signup-form h2 {
+    margin-bottom: 16px;
+}
+
+.signup-form div {
+    margin-bottom: 16px;
+}
+
+.signup-form label {
+    margin-bottom: .5em;
+    display: block;
+}
+
+.signup-form input {
+    border: 2px solid #200744;
+    padding: 0.5em;
+    font-size: 16px;
+    width: 100%;
+}
+
+.signupbutton {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #103863;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.signup-form .error {
+    color: red;
+    font-size: 0.8em;
+}
