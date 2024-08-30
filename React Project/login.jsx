@@ -1,6 +1,5 @@
 import React from "react";
-import "./login.css"; // Importing an external CSS file for better styling
-
+import "./login.css"; 
 class Login extends React.Component {
     constructor() {
         super();
