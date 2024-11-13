@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+    overflow: hidden;
+    position: relative;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+.motion-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: -2;
+    animation: backgroundMove 10s linear infinite;
+}
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.signup-container {
+    position: relative;
+    width: 400px; 
+    height: 540px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.signup-container::after {
+    animation-delay: -5s;
+}
+@keyframes gradientMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+.signup-form {
+    position: absolute;
+    inset: 10px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    color: #45f3ff;
+}
+
+.signup-form h2 {
+    color: #45f3ff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.inputbox label {
+    color: #8f8f8f;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #45f3ff;
+    border-radius: 4px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: border-color 0.3s ease;
+}
+
+.inputbox input:focus {
+    border-color: #45f3ff;
+}
+
+.inputbox .error {
+    color: #ff6b6b;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #23242a;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #36c2d3;
+}
+
+input[type="submit"]:active {
+    opacity: 0.8;
+}

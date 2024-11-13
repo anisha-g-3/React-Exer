@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  color: #45f3ff;
+}
+
+.back {
+  background-color: aliceblue;
+  width: 500px;
+}
+
+.box {
+  width: 200px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: #558587;
+  color: rgb(251, 251, 252);
+}
+
+.tt {
+  color: rgb(13, 13, 13);
+  font-size: large;
+}
+
+.count {
+  font-size: larger;
+  color: cadetblue;
+}
+
+/* Additional CSS for Seating Arrangement */
+.seating-arrangement {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.seat:hover {
+  background-color: #a9a9a9; /* Change color on hover */
+}
+
+.seat.selected {
+  background-color: #4caf50; /* Color for selected seats */
+}
+
+.summary {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: black;
+}

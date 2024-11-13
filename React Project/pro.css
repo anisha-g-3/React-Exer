@@ -1,0 +1,19 @@
+.home-page.light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .home-page.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Adjust other elements as needed */
+  .header {
+    padding: 20px;
+  }
+  
+  .footer {
+    padding: 10px;
+  }
+  
